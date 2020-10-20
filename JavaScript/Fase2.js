@@ -5,10 +5,7 @@ const ciutat4 = "Malaga";
 const ciutat5 = "Cadis";
 const ciutat6 = "Santander";
 
-console.log(ciutat1);
-console.log(ciutat2);
-console.log(ciutat3);
-console.log(ciutat4);
-console.log(ciutat5);
-console.log(ciutat6);
+const arrayCiutats = [];
+arrayCiutats.push(ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6);
 
+console.log(arrayCiutats.sort())

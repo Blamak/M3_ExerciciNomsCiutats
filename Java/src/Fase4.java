@@ -28,7 +28,6 @@ public class Fase4 {
 				Arrays.asList(arrayCiutat1, arrayCiutat2, arrayCiutat3, arrayCiutat4, arrayCiutat5, arrayCiutat6));
 
 		for (int i = 0; i < arrayCiutats.size(); i++) {
-
 			String nomCiutat = arrayCiutats.get(i);
 
 			for (char lletra : nomCiutat.toCharArray()) {
