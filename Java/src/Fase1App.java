@@ -18,8 +18,7 @@ public class Fase1App {
 		ciutat3 = ciutats.nextLine();
 		ciutat4 = ciutats.nextLine();
 		ciutat5 = ciutats.nextLine();
-		ciutat6 = ciutats.next();
-		
+		ciutat6 = ciutats.nextLine();
 		ciutats.close();
 		
 		System.out.println(ciutat1);
