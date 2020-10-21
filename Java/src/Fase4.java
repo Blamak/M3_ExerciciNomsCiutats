@@ -22,7 +22,7 @@ public class Fase4 {
 		List<Character> arrayCiutat5 = new ArrayList<>();
 		List<Character> arrayCiutat6 = new ArrayList<>();
 
-//		Array bidimensional que contindrà els arrays per cada ciutat:
+		// Array bidimensional que contindrà els arrays per cada ciutat:
 		List<List<Character>> array2dimensions = new ArrayList<List<Character>>();
 		array2dimensions.addAll(
 				Arrays.asList(arrayCiutat1, arrayCiutat2, arrayCiutat3, arrayCiutat4, arrayCiutat5, arrayCiutat6));
@@ -36,13 +36,13 @@ public class Fase4 {
 		}
 
 		System.out.println("Array bidimensional: " + array2dimensions);
-		System.out.println("L'array " + array2dimensions.get(0) + " té una mida de: " + array2dimensions.get(0).size());
-		System.out.println("L'array " + array2dimensions.get(1) + " té una mida de: " + array2dimensions.get(1).size());
-		System.out.println("L'array " + array2dimensions.get(2) + " té una mida de: " + array2dimensions.get(2).size());
-		System.out.println("L'array " + array2dimensions.get(3) + " té una mida de: " + array2dimensions.get(3).size());
-		System.out.println("L'array " + array2dimensions.get(4) + " té una mida de: " + array2dimensions.get(4).size());
-		System.out.println("L'array " + array2dimensions.get(5) + " té una mida de: " + array2dimensions.get(5).size());
-
+		System.out.println("L'array " + arrayCiutat1 + " té una mida de: " + arrayCiutat1.size());
+		System.out.println("L'array " + arrayCiutat2 + " té una mida de: " + arrayCiutat2.size());
+		System.out.println("L'array " + arrayCiutat3 + " té una mida de: " + arrayCiutat3.size());
+		System.out.println("L'array " + arrayCiutat4 + " té una mida de: " + arrayCiutat4.size());
+		System.out.println("L'array " + arrayCiutat5 + " té una mida de: " + arrayCiutat1.size());
+		System.out.println("L'array " + arrayCiutat6 + " té una mida de: " + arrayCiutat6.size());
+		
 	}
 
 }
