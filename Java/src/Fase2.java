@@ -6,7 +6,7 @@ import java.util.List;
 public class Fase2 {
 	public static void main(String[] args) {
 				
-		List<String> arrayCiutats = new ArrayList<>();
+		List <String> arrayCiutats = new ArrayList<>();
 		
 		String ciutat1 = "Barcelona";
 		String ciutat2 = "Madrid";

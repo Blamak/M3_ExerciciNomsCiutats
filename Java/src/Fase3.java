@@ -13,8 +13,8 @@ public class Fase3 {
 		String ciutat5 = "Cadis";
 		String ciutat6 = "Santander";
 		
-		List<String> arrayCiutats            = new ArrayList<>();
-		List<String> arrayCiutatsModificades = new ArrayList<>();
+		List <String> arrayCiutats            = new ArrayList<>();
+		List <String> arrayCiutatsModificades = new ArrayList<>();
 
 		arrayCiutats.addAll(Arrays.asList(ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6));
 		

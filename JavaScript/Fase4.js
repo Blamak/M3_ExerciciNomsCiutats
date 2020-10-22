@@ -26,15 +26,14 @@ const array2dimensions = [
 
 for (let i = 0; i < arrayCiutats.length; i++) {
   const nomCiutat = arrayCiutats[i];
-
+  
+  // Omplir els arrays de cada ciutat, lletra per lletra.
   [...nomCiutat].forEach((lletra) => {
     array2dimensions[i].push(lletra);
   });
 }
 
-console.log(arrayCiutat1);
-console.log(arrayCiutat2);
-console.log(arrayCiutat3);
-console.log(arrayCiutat4);
-console.log(arrayCiutat5);
-console.log(arrayCiutat6);
+array2dimensions.forEach(arrayCiutat => {
+  arrayCiutat.reverse();
+  console.log(arrayCiutat);
+});

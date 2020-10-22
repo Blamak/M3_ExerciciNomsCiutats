@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Fase4 {
@@ -12,36 +13,35 @@ public class Fase4 {
 		String ciutat5 = "Cadis";
 		String ciutat6 = "Santander";
 
-		List<String> arrayCiutats = new ArrayList<>();
+		List <String> arrayCiutats = new ArrayList<>();
 		arrayCiutats.addAll(Arrays.asList(ciutat1, ciutat2, ciutat3, ciutat4, ciutat5, ciutat6));
-
-		List<Character> arrayCiutat1 = new ArrayList<>();
-		List<Character> arrayCiutat2 = new ArrayList<>();
-		List<Character> arrayCiutat3 = new ArrayList<>();
-		List<Character> arrayCiutat4 = new ArrayList<>();
-		List<Character> arrayCiutat5 = new ArrayList<>();
-		List<Character> arrayCiutat6 = new ArrayList<>();
+		
+		List <Character> arrayCiutat1 = new ArrayList<>();
+		List <Character> arrayCiutat2 = new ArrayList<>();
+		List <Character> arrayCiutat3 = new ArrayList<>();
+		List <Character> arrayCiutat4 = new ArrayList<>();
+		List <Character> arrayCiutat5 = new ArrayList<>();
+		List <Character> arrayCiutat6 = new ArrayList<>();
 
 		// Array bidimensional que contindrà els arrays per cada ciutat:
-		List<List<Character>> array2dimensions = new ArrayList<List<Character>>();
+		List <List <Character> > array2dimensions = new ArrayList<List <Character> >();
 		array2dimensions.addAll(
 				Arrays.asList(arrayCiutat1, arrayCiutat2, arrayCiutat3, arrayCiutat4, arrayCiutat5, arrayCiutat6));
 
+		// Recórrer l'array que conté els noms de les ciutats.
 		for (int i = 0; i < arrayCiutats.size(); i++) {
 			String nomCiutat = arrayCiutats.get(i);
 
+			// Amb cada nom de ciutat omplir els arrays del bidimensional, lletra per lletra.
 			for (char lletra : nomCiutat.toCharArray()) {
 				array2dimensions.get(i).add(lletra);
 			}
 		}
-
-		System.out.println("Array bidimensional: " + array2dimensions);
-		System.out.println("L'array " + arrayCiutat1 + " té una mida de: " + arrayCiutat1.size());
-		System.out.println("L'array " + arrayCiutat2 + " té una mida de: " + arrayCiutat2.size());
-		System.out.println("L'array " + arrayCiutat3 + " té una mida de: " + arrayCiutat3.size());
-		System.out.println("L'array " + arrayCiutat4 + " té una mida de: " + arrayCiutat4.size());
-		System.out.println("L'array " + arrayCiutat5 + " té una mida de: " + arrayCiutat1.size());
-		System.out.println("L'array " + arrayCiutat6 + " té una mida de: " + arrayCiutat6.size());
+		
+		for(List <Character> arrayCiutat : array2dimensions) {
+			Collections.reverse(arrayCiutat);
+			System.out.println(arrayCiutat);
+		}
 		
 	}
 
